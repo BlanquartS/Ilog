@@ -71,16 +71,3 @@ salle de l'activité, choix entre :
         sinon focus sur le créneau qui la contient (scrolling éventuel) ;
     validation au cours de la saisie des contraintes
 
-TODO
-
-    Améliorer et étendre l'idée ;
-    rédiger des tests unitaires ;
-    implémenter.
-```
-
-## Questions :
-
-- class parametre: comment elle s'applique selon le type d'activité ?
-- Une activité = 1 durée par défaut ? D'ou vient la valeur ?
-- sauvegarde bdd ?
-- Donnée de créneaux et type d'activité à créer nous même ?
