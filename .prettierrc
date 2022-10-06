@@ -1,0 +1,14 @@
+{
+  "overrides": [
+    {
+      "files": "*.test.js"
+    },
+    {
+      "files": ["*.html", "legacy/**/*.js"],
+      "options": {
+        "tabWidth": 2,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}

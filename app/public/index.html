@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projet BLANQUART OUVRY</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./bundle.js" defer></script>
+    <link href="bundle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>ILOG</h3>
+        <h3>Planning</h3>
+        <button id="resetButton" class="mdc-button mdc-button--outlined">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">Reinitialiser</span>
+        </button>
+        <div class="alert">
+          <span class="msgAlert">Mise à jour réalisée</span>
+        </div>
+      </header>
+      <section>
+        <div class="mdc-data-table">
+          <div class="mdc-data-table__table-container">
+            <table class="mdc-data-table__table" aria-label="Dessert calories">
+              <thead>
+                <tr class="mdc-data-table__header-row">
+                  <th
+                    class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric"
+                    scope="col"
+                  >
+                    #
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Jour
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Date
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Début
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Fin
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Type
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Libellé
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Intervenant
+                  </th>
+                  <th
+                    class="mdc-data-table__header-cell"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    Lieu
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                id="timeslots-list"
+                class="mdc-data-table__content"
+              ></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <aside id="aside-right">
+        <ul id="activity-list" class="mdc-list"></ul>
+      </aside>
+      <footer>
+        <div class="mdc-tab-bar" role="tablist">
+          <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+              <div class="mdc-tab-scroller__scroll-content">
+                <button
+                  class="mdc-tab mdc-tab--active"
+                  role="tab"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__text-label">Fiche intervenant</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                    ></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button
+                  class="mdc-tab mdc-tab"
+                  role="tab"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__text-label">Salle</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator">
+                    <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                    ></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button
+                  class="mdc-tab mdc-tab"
+                  role="tab"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__text-label">Paramètres</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator">
+                    <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                    ></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button
+                  class="mdc-tab mdc-tab"
+                  role="tab"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__text-label">Envoi</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator">
+                    <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                    ></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content content--active">
+          <div class="mdc-select mdc-select--filled demo-width-class">
+            <div
+              class="mdc-select__anchor"
+              role="button"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-labelledby="demo-label demo-selected-text"
+            >
+              <span class="mdc-select__ripple"></span>
+              <span id="demo-label" class="mdc-floating-label">Enseignant</span>
+              <span class="mdc-select__selected-text-container">
+                <span
+                  id="demo-selected-text"
+                  class="mdc-select__selected-text"
+                ></span>
+              </span>
+              <span class="mdc-select__dropdown-icon">
+                <svg
+                  class="mdc-select__dropdown-icon-graphic"
+                  viewBox="7 10 10 5"
+                  focusable="false"
+                >
+                  <polygon
+                    class="mdc-select__dropdown-icon-inactive"
+                    stroke="none"
+                    fill-rule="evenodd"
+                    points="7 10 12 15 17 10"
+                  ></polygon>
+                  <polygon
+                    class="mdc-select__dropdown-icon-active"
+                    stroke="none"
+                    fill-rule="evenodd"
+                    points="7 15 12 10 17 15"
+                  ></polygon>
+                </svg>
+              </span>
+              <span class="mdc-line-ripple"></span>
+            </div>
+
+            <div
+              class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+            >
+              <ul
+                class="mdc-list"
+                id="teacher-select-options"
+                role="listbox"
+                aria-label="Teacher picker"
+              ></ul>
+            </div>
+          </div>
+          <div id="teacher-fields">
+            <label
+              id="teacher-initials"
+              class="mdc-text-field mdc-text-field--filled"
+            >
+              <span class="mdc-text-field__ripple"></span>
+              <span class="mdc-floating-label" id="teacherinitials">
+                Initiales
+              </span>
+              <input
+                class="mdc-text-field__input"
+                type="text"
+                aria-labelledby="teacherinitials"
+              />
+              <span class="mdc-line-ripple"></span>
+            </label>
+
+            <label
+              id="teacher-name"
+              class="mdc-text-field mdc-text-field--filled"
+            >
+              <span class="mdc-text-field__ripple"></span>
+              <span class="mdc-floating-label" id="teachername">Name</span>
+              <input
+                class="mdc-text-field__input"
+                type="text"
+                aria-labelledby="teachername"
+              />
+              <span class="mdc-line-ripple"></span>
+            </label>
+
+            <label
+              id="teacher-firstname"
+              class="mdc-text-field mdc-text-field--filled"
+            >
+              <span class="mdc-text-field__ripple"></span>
+              <span class="mdc-floating-label" id="teacherfirstname">
+                Firstname
+              </span>
+              <input
+                class="mdc-text-field__input"
+                type="text"
+                aria-labelledby="teacherfirstname"
+              />
+              <span class="mdc-line-ripple"></span>
+            </label>
+
+            <label
+              id="teacher-email"
+              class="mdc-text-field mdc-text-field--filled"
+            >
+              <span class="mdc-text-field__ripple"></span>
+              <span class="mdc-floating-label" id="teacheremail">Email</span>
+              <input
+                class="mdc-text-field__input"
+                type="text"
+                aria-labelledby="teacheremail"
+              />
+              <span class="mdc-line-ripple"></span>
+            </label>
+
+            <label
+              id="teacher-link"
+              class="mdc-text-field mdc-text-field--filled"
+            >
+              <span class="mdc-text-field__ripple"></span>
+              <span class="mdc-floating-label" id="teacherlink">Lien</span>
+              <input
+                class="mdc-text-field__input"
+                type="text"
+                aria-labelledby="teacherlink"
+              />
+              <span class="mdc-line-ripple"></span>
+            </label>
+          </div>
+        </div>
+        <div class="content" id="salle">
+          <div class="mdc-form-field">
+            <div class="mdc-radio" id="salle-defaut">
+              <input
+                class="mdc-radio__native-control"
+                type="radio"
+                id="radio-salle-defaut"
+                name="radios"
+                checked
+              />
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
+              <div class="mdc-radio__ripple"></div>
+            </div>
+            <label for="radio-salle-defaut">Salle de TP/COURS par défaut</label>
+          </div>
+          <div class="mdc-form-field">
+            <div class="mdc-radio" id="salle-virtuelle">
+              <input
+                class="mdc-radio__native-control"
+                type="radio"
+                id="radio-virtuelle-enseignant"
+                name="radios"
+              />
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
+              <div class="mdc-radio__ripple"></div>
+            </div>
+            <label for="radio-virtuelle-enseignant">
+              Salle par défaut de l'enseignant
+            </label>
+          </div>
+          <label class="mdc-text-field mdc-text-field--filled" id="autre-salle">
+            <span class="mdc-text-field__ripple"></span>
+            <span class="mdc-floating-label" id="my-label-id">Autres</span>
+            <input
+              class="mdc-text-field__input"
+              type="text"
+              aria-labelledby="my-label-id"
+            />
+            <span class="mdc-line-ripple"></span>
+          </label>
+        </div>
+        <div class="content" id="parameters">
+          <label
+            class="mdc-text-field mdc-text-field--filled"
+            id="laboParameter-defaut"
+          >
+            <span class="mdc-text-field__ripple"></span>
+            <span class="mdc-floating-label" id="my-label-id">
+              Labo par défaut
+            </span>
+            <input
+              class="mdc-text-field__input"
+              type="text"
+              aria-labelledby="my-label-id"
+            />
+            <span class="mdc-line-ripple"></span>
+          </label>
+          <label
+            class="mdc-text-field mdc-text-field--filled"
+            id="salleParameter-defaut"
+          >
+            <span class="mdc-text-field__ripple"></span>
+            <span class="mdc-floating-label" id="my-label-id">
+              Salle par défaut
+            </span>
+            <input
+              class="mdc-text-field__input"
+              type="text"
+              aria-labelledby="my-label-id"
+            />
+            <span class="mdc-line-ripple"></span>
+          </label>
+          <label
+            class="mdc-text-field mdc-text-field--filled"
+            id="dureeParameter-defaut"
+          >
+            <span class="mdc-text-field__ripple"></span>
+            <span class="mdc-floating-label" id="my-label-id">
+              Durée par défaut
+            </span>
+            <input
+              class="mdc-text-field__input"
+              type="text"
+              aria-labelledby="my-label-id"
+            />
+            <span class="mdc-line-ripple"></span>
+          </label>
+        </div>
+        <div class="content">
+          <button id="send-all" class="mdc-button mdc-button--outlined">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Envoyer</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,928 @@
+{
+  "DEFAULT_LAB_ROOM": "B02S",
+  "DEFAULT_ROOM": "C02N",
+  "DEFAULT_DURATION": 90,
+  "NULL_ACTIVITY": {
+    "duration": "",
+    "kind": "",
+    "label": "",
+    "link": "",
+    "teacher": "",
+    "timeslot": -1,
+    "location": ""
+  },
+  "activities": [
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Présentation UV - Production du logiciel",
+      "link": "PL",
+      "teacher": "CT",
+      "timeslot": null,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Installation de la VM",
+      "link": "TPInstalltionVM",
+      "teacher": "CT",
+      "timeslot": 0,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Gestion de versions",
+      "link": "TPGit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Programmation modulaire - automatisation",
+      "link": "TPCompilation",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Production du logiciel",
+      "link": "PL",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Compilation Java",
+      "link": "TPCompilationJava",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Eclipse Utilisateur",
+      "link": "TPEclipseUtilisateur",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Tests 1",
+      "link": "Tests",
+      "teacher": "CT",
+      "timeslot": 7,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Mise au point C",
+      "link": "TPEclipseDebug",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Java Native Interface",
+      "link": "TPJNI",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Threads",
+      "link": "TPThreads",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Tests 2",
+      "link": "Tests",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Classloaders",
+      "link": "ClassLoaders",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Réflexion",
+      "link": "ClassLoaders",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "UML 1",
+      "link": "IntroUML",
+      "teacher": "ER",
+      "timeslot": 14,
+      "location": "https://imt-lille-douai.zoom.us/j/91410735524"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "UML 1",
+      "link": "TPUML",
+      "teacher": "ER",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "UML 2",
+      "link": "TPUML",
+      "teacher": "ER",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "JUnit 1",
+      "link": "JUnit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "UML 2",
+      "link": "IntroUML",
+      "teacher": "ER",
+      "timeslot": 18,
+      "location": "https://imt-lille-douai.zoom.us/j/98336733000"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "JUnit 2",
+      "link": "JUnit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "JUnit 3",
+      "link": "JUnit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Langages de script",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 22,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "JUnit 4",
+      "link": "JUnit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "JUnit 5",
+      "link": "JUnit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "JUnit 6",
+      "link": "JUnit",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Refactoring",
+      "link": "CoursRefactorisation",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Refactoring 1",
+      "link": "Refactorisation",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Refactoring 2",
+      "link": "Refactorisation",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Scripting applicatif",
+      "link": "Scripting",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "TypeScript",
+      "link": "TypeScript",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Outillage Web",
+      "link": "TSWebTooling",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "TS Modularité",
+      "link": "TSModules",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Prog. Web",
+      "link": "TSWebProg",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Promesses",
+      "link": "TSPromises",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "2:00",
+      "kind": "EXAM",
+      "label": "Examen 1",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "Amphi BYRON"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Rest/Http",
+      "link": "TSRest",
+      "teacher": "CT",
+      "timeslot": -2,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Web App 1",
+      "link": "TSWebApp",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Web App 2",
+      "link": "TSWebApp",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Web App 3",
+      "link": "TSWebApp",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Q&R",
+      "link": "",
+      "teacher": "CT",
+      "timeslot": 46,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Généricité 1",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 50,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Généricité 2",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 53,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Prog. fonc. 1",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 57,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Prog. Fonc. 2",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 60,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "COU",
+      "label": "Injection dépendances",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 64,
+      "location": ""
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "autoformation"
+    },
+
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Généricité 1",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 68,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Généricité 2",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 69,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Prog. fonc. 1",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 70,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Prog. Fonc. 2",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 71,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Prog. Fonc. 3",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 72,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Prog. Fonc. 4",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 73,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Injection dépendances 1",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 74,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Injection dépendances 2",
+      "link": "",
+      "teacher": "GV",
+      "timeslot": 75,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Mongoose 1",
+      "link": "TSMongoose",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "TP",
+      "label": "Mongoose 2",
+      "link": "TSMongoose",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Projet",
+      "link": "projets",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "REV",
+      "label": "Révision",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "2:00",
+      "kind": "EXAM",
+      "label": "Examen 2",
+      "link": "",
+      "teacher": "",
+      "timeslot": -1,
+      "location": "Amphi BYRON"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Présentations des projets 1",
+      "link": "projets",
+      "teacher": "CT",
+      "timeslot": -2,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Présentations des projets 2",
+      "link": "projets",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Présentations des projets 3",
+      "link": "projets",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    },
+    {
+      "duration": "1:30",
+      "kind": "PRJ",
+      "label": "Présentations des projets 4",
+      "link": "projets",
+      "teacher": "CT",
+      "timeslot": -1,
+      "location": "?"
+    }
+  ],
+  "teachers": {
+    "CT": {
+      "email": "christophe.tombelle@imt-nord-europe.fr",
+      "firstName": "Christophe",
+      "initials": "CT",
+      "link": "https://imt-lille-douai.zoom.us/j/94856859150",
+      "name": "TOMBELLE"
+    },
+    "DP": {
+      "email": "damien.pollet@inria.fr",
+      "firstName": "Damien",
+      "initials": "DP",
+      "link": "https://imt-lille-douai.zoom.us/j/96726164037",
+      "name": "POLLET"
+    },
+    "ER": {
+      "email": "emmanuel.renaux@imt-nord-europe.fr",
+      "firstName": "Emmanuel",
+      "initials": "ER",
+      "link": "",
+      "name": "RENAUX"
+    },
+    "GV": {
+      "email": "gilles.vanwormhoudt@imt-nord-europe.fr",
+      "firstName": "Gilles",
+      "initials": "GV",
+      "link": "https://imt-lille-douai.zoom.us/j/92403061342",
+      "name": "VANWORMHOUDT"
+    }
+  },
+  "timeslots": [
+    { "date": 15, "month": 11, "year": 2021, "start": "14:00" },
+    { "start": "19:00" },
+    { "date": 16 },
+    { "date": 17 },
+    { "date": 18, "start": "09:00" },
+    { "start": "19:00" },
+    { "date": 19 },
+
+    { "date": 22, "start": "14:00" },
+    { "start": "19:00" },
+    { "date": 23 },
+    { "date": 24 },
+    { "date": 25, "start": "09:00" },
+    { "start": "19:00" },
+    { "date": 26 },
+
+    { "date": 29, "start": "14:00" },
+    { "start": "19:00" },
+    { "date": 30 },
+    { "date": 1, "month": 12 },
+    { "date": 2, "start": "09:00" },
+    { "start": "19:00" },
+    { "date": 3 },
+
+    { "date": 6, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 7, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 8, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 9, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 10, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+
+    { "date": 13, "start": "14:00" },
+    { "start": "19:00" },
+    { "date": 14 },
+    { "date": 15 },
+    { "date": 16, "start": "09:00" },
+    { "start": "19:00" },
+    { "date": 17 },
+
+    { "date": 3, "month": 1, "year": 2022, "start": "14:00" },
+    { "start": "19:00" },
+    { "date": 4 },
+    { "date": 5 },
+    { "date": 6, "start": "09:00" },
+    { "start": "19:00" },
+    { "date": 7 },
+
+    { "date": 10, "start": "14:00" },
+    { "start": "19:00" },
+    { "date": 11 },
+    { "date": 12 },
+    { "date": 13, "start": "09:00" },
+    { "start": "19:00" },
+    { "date": 14 },
+
+    { "date": 17, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 18, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 19, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 20, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" },
+    { "date": 21, "start": "08:30" },
+    { "start": "10:15" },
+    { "start": "13:00" },
+    { "start": "14:45" },
+    { "start": "16:30" }
+  ]
+}

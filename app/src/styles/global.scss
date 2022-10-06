@@ -1,0 +1,238 @@
+// material components
+@use "@material/data-table/data-table";
+@use "@material/button/styles" as btn-style;
+@use "@material/list";
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab/mdc-tab";
+@use "tippy.js/dist/tippy.css";
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/select/styles" as slct-style;
+@use "@material/select";
+@use "@material/radio/styles";
+@use "@material/radio";
+@use "@material/form-field";
+
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+@include list.deprecated-core-styles;
+@include textfield.core-styles;
+@include form-field.core-styles;
+
+@import "colors.scss";
+@import "scrollbar.scss";
+@import "forms.scss";
+@import "timeslot.scss";
+@import "activities.scss";
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&display=swap");
+
+// Material web components customization
+* {
+  --mdc-typography-font-family: "Readex Pro"; // font family for material components
+  --mdc-theme-primary: $white;
+  --mdc-outlined-button-outline-color: $white;
+  --mdc-theme--on-primary: $white;
+  --mdc-theme-text-primary-on-background: $white;
+  .mdc-tab .mdc-tab__text-label {
+    color: $white;
+  }
+  .mdc-tab-indicator .mdc-tab-indicator__content--underline {
+    border-color: $white;
+  }
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+* {
+  font-family: "Readex Pro", serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  /*  Look at the console to see what the shorthand of areas do behind the scenes  */
+  grid-template-areas:
+    "header"
+    "section"
+    "aside-left"
+    "footer";
+  grid-template-rows: 1fr 10fr;
+}
+
+@media (min-width: 400px) {
+  .container {
+    grid-template-areas:
+      "header header "
+      "section aside-right"
+      "footer  footer";
+    /*". footer"; for empty spaces*/
+    grid-template-rows: 1fr 6fr 3fr;
+    grid-template-columns: 8fr 2fr;
+  }
+}
+
+.container > * {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: $lighter-main;
+  color: $white;
+}
+
+aside#right-side {
+  grid-area: aside-right;
+}
+
+section {
+  grid-area: section;
+  background-color: $white;
+}
+
+footer {
+  padding: 0 5%;
+  grid-area: footer;
+  background-color: $lighter-main;
+  color: $white;
+  flex-wrap: wrap;
+  border-top: 10px solid $main-color;
+  align-items: flex-start !important;
+}
+
+header {
+  border-bottom: 10px solid $main-color;
+}
+
+.centered {
+  width: 100%;
+  justify-self: flex-start;
+}
+
+footer div.centered {
+  margin-top: 0.5em;
+  display: flex;
+  gap: 2em;
+}
+
+footer div.centered button {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  display: none;
+
+  .mdc-select {
+    width: 33%;
+  }
+
+  > * {
+    height: 60px;
+  }
+}
+
+.content--active {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mdc-text-field {
+  @include textfield.ink-color($main-color);
+  @include textfield.placeholder-color($main-color);
+  @include textfield.label-color($lighter-main);
+  @include textfield.outline-color(rgba($lighter-main, 0.7));
+  @include textfield.focused-outline-color($white);
+  @include textfield.hover-outline-color($white);
+  @include textfield.fill-color($white);
+}
+
+.mdc-select {
+  @include select.ink-color($main-color);
+  @include select.label-color(
+    (
+      "default": $main-color,
+      "hover": $lighter-main,
+      "focus": $lighter-main,
+    )
+  );
+  @include select.label-floating-color($lighter-main);
+  @include select.dropdown-icon-color($main-color);
+}
+
+.mdc-radio {
+  @include radio.ink-color($white);
+  @include radio.checked-stroke-color($main-color);
+
+  label {
+    color: $white !important;
+  }
+}
+
+/* The alert message box */
+.alert {
+  position: fixed;
+  left: 82%;
+  z-index: 1;
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  display:block;
+  opacity: 0;
+}
+
+.alert.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.alert.inactive {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}

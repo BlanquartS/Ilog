@@ -1,0 +1,60 @@
+{
+  "name": "ilogd21002",
+  "version": "1.0.0",
+  "description": "Nous utilisons des dépendances NPM pour lancer le projet plus facilement en une ligne de commande.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run rest-server\"",
+    "watch": "webpack",
+    "server": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rest-server": "ts-node-dev --respawn --transpile-only server/src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TelecomLille/ilogd21002.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TelecomLille/ilogd21002/issues"
+  },
+  "homepage": "https://github.com/TelecomLille/ilogd21002#readme",
+  "dependencies": {
+    "@material/data-table": "^13.0.0",
+    "@material/list": "^13.0.0",
+    "concurrently": "^6.4.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "material-components-web": "^13.0.0",
+    "mocha": "^9.1.4",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^16.11.13",
+    "@types/supertest": "^2.0.11",
+    "body-parser": "^1.19.1",
+    "clipboard.js": "^1.0.1",
+    "cors": "^2.8.5",
+    "css-loader": "^6.5.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^7.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "supertest": "^6.1.6",
+    "tippy.js": "^6.3.7",
+    "ts-loader": "^9.2.6",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}

@@ -1,0 +1,31 @@
+@use 'colors';
+
+section {
+  background-color: $accent;
+  overflow-y: auto;
+
+  .mdc-data-table {
+    height: 100%;
+    width: 100%;
+
+    .mdc-data-table__row--selected {
+      background-color: rgba($accent, 0.3);
+    }
+  }
+}
+
+#timeslots-list,
+#activity-list {
+  .mdc-list-item--selected {
+    border: 4px $main-color solid;
+    background-color: $lighter-main;
+    color: $white;
+  }
+  .mdc-list-item__text {
+    text-align: start;
+  }
+}
+
+ul#activity-list {
+  height: 100%;
+}
