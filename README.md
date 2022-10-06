@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/43012843/194339135-f20a3e4a-eb50-49b2-8ac7-cf1948578dff.png)
+
+
 # ilogd21002
 
 ## Installation
@@ -70,4 +73,5 @@ salle de l'activité, choix entre :
         si activité non placée : focus sur le premier créneau libre (scrolling éventuel) ;
         sinon focus sur le créneau qui la contient (scrolling éventuel) ;
     validation au cours de la saisie des contraintes
+
 
